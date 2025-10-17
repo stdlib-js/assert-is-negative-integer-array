@@ -35,32 +35,20 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only negative integers.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-negative-integer-array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isNegativeIntegerArray = require( '@stdlib/assert-is-negative-integer-array' );
+import isNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@deno/mod.js';
 ```
 
 #### isNegativeIntegerArray( value )
@@ -70,7 +58,7 @@ Tests if a `value` is an array-like object containing **only** negative `integer
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
 var bool = isNegativeIntegerArray( [ -3, new Number(-3) ] );
 // returns true
@@ -86,7 +74,7 @@ Tests if a `value` is an array-like object containing **only** negative primitiv
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
 var bool = isNegativeIntegerArray.primitives( [ -1.0, -10.0 ] );
 // returns true
@@ -105,7 +93,7 @@ Tests if a `value` is an array-like object containing **only** `Number` objects 
 <!-- eslint-disable no-new-wrappers, max-len -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
 var bool = isNegativeIntegerArray.objects( [ new Number(-1.0), new Number(-10.0) ] );
 // returns true
@@ -130,8 +118,8 @@ bool = isNegativeIntegerArray.objects( [ -3.0, new Number(-1.0) ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
-var isNegativeIntegerArray = require( '@stdlib/assert-is-negative-integer-array' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
+import isNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@deno/mod.js';
 
 var bool = isNegativeIntegerArray( [ -5, -2, -3 ] );
 // returns true
@@ -182,7 +170,7 @@ bool = isNegativeIntegerArray( [] );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -247,7 +235,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/deno
 
 <!-- </related-links> -->
 
