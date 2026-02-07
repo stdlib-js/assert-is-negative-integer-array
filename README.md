@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@esm/index.mjs';
+import isNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@v0.2.3-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@esm/index.mjs';
+import { objects, primitives } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@v0.2.3-esm/index.mjs';
 ```
 
 #### isNegativeIntegerArray( value )
@@ -124,7 +124,7 @@ bool = isNegativeIntegerArray.objects( [ -3.0, new Number(-1.0) ] );
 <script type="module">
 
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@esm/index.mjs';
+import isNegativeIntegerArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-integer-array@v0.2.3-esm/index.mjs';
 
 var bool = isNegativeIntegerArray( [ -5, -2, -3 ] );
 // returns true
